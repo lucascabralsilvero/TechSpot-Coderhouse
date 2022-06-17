@@ -1,0 +1,116 @@
+/*Colores*/
+/* Media query */
+main {
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+}
+
+main .carousel {
+  padding-top: 4rem;
+}
+
+main .card {
+  width: 18rem;
+}
+
+.nav-item .nav-link {
+  cursor: pointer;
+  margin-top: .3rem;
+}
+
+.nav-item .nav-link span {
+  color: white;
+  top: -.5rem;
+  right: 1.2rem;
+  width: 1.3rem;
+}
+
+.navbar {
+  background-color: #ffc107;
+  font-family: sans-serif;
+  z-index: 100;
+}
+
+.navbar a:hover {
+  color: #dc3545;
+}
+
+.search-bottom {
+  background-color: #ffc107;
+  height: 3rem;
+  position: fixed;
+  top: 4rem;
+  z-index: 200;
+}
+
+.search-bottom .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.cart-modal-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 500;
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+.cart-modal-overlay .cart-modal {
+  height: 100vh;
+  width: 30%;
+  background-color: #323232;
+  float: right;
+  overflow: scroll;
+  overflow-x: hidden;
+  color: white;
+}
+
+.cart-modal-overlay .cart-modal #close-btn {
+  cursor: pointer;
+}
+
+.section-2 .filters {
+  background-color: #ffc107;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 3.5rem;
+  z-index: 100;
+}
+
+.card-container {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+
+.footer {
+  background-color: #ffc107;
+  height: 4rem;
+}
+
+.footer h5 i:hover {
+  color: #dc3545;
+}
+
+.footer h5 a {
+  text-decoration: none;
+  color: #0d6efd;
+}
+
+.footer h5 a:hover {
+  color: #dc3545;
+}
+
+@media only screen and (max-width: 768px) {
+  main .carousel {
+    padding-top: 7rem;
+  }
+  main .section-2 .filters {
+    top: 6.5rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
