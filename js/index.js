@@ -122,15 +122,14 @@ const llenarCarrito = () => {
     Object.values(carrito).forEach(producto => {
 
         console.log(producto);
-
         template.querySelectorAll("td")[0].querySelector("img").setAttribute("src", producto.imageUrl);
         template.querySelectorAll("td")[1].textContent = producto.title;
         template.querySelectorAll("td")[2].textContent = producto.cantidad;
         template.querySelector("span").textContent = producto.precio * producto.cantidad;
 
         // Botones
-    //    template.querySelector("btn-info").dataset.id = producto.id;
-        // template.querySelector("btn-danger").dataset.id = producto.id;
+     /*  template.querySelector("btn-info").dataset.id = producto.id;
+      template.querySelector("btn-danger").dataset.id = producto.id; */
 
         const clone = template.cloneNode(true); 
         fragment.appendChild(clone);
