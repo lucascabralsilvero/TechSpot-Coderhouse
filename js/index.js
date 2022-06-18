@@ -125,11 +125,56 @@ const llenarCarrito = () => {
         template.querySelectorAll("td")[0].querySelector("img").setAttribute("src", producto.imageUrl);
         template.querySelectorAll("td")[1].textContent = producto.title;
         template.querySelectorAll("td")[2].textContent = producto.cantidad;
-        template.querySelector("span").textContent = producto.precio * producto.cantidad;
+        template.querySelector("span").textContent = producto.price * producto.cantidad;
 
         const clone = template.cloneNode(true); 
         fragment.appendChild(clone);
     })
 
     items.appendChild(fragment);
+
+    mostrarFooter();
+}
+
+const footer = d.getElementById("footer-carrito"); 
+const quantity = d.getElementById("cart-quantity");
+const mostrarFooter = () => {
+    footer.innerHTML = "";
+    
+    // Contar si existen elementos
+
+    if (Object.keys(carrito).length === 0){
+        footer.innerHTML = `
+        <th scope="row" class="text-center" colspan="5">Carrito vacío - comience a comprar!</th>
+        `
+        return
+    }
+
+    const template = d.getElementById("template-footer").content;
+    const fragment = d.createDocumentFragment(); 
+
+    // Sumar cantidad y totales
+
+    let nCantidad = Object.values(carrito).reduce((acc,{cantidad}) => acc + cantidad, 0)
+    console.log(nCantidad);
+    const nPrecio = Object.values(carrito).reduce((acc,{cantidad,price}) => acc + cantidad * price,0)
+    // console.log(nPrecio);
+    template.querySelectorAll("td")[0].textContent = nCantidad;
+    template.querySelector("span").textContent = nPrecio;
+
+    const clone = template.cloneNode(true); 
+      fragment.appendChild(clone); 
+
+      footer.appendChild(fragment); 
+
+      const boton = d.getElementById("vaciar-carrito");
+      boton.addEventListener("click",()=>{
+          carrito = {};
+        //   console.log(carrito);
+          llenarCarrito();
+          nCantidad = 0;
+          console.log(nCantidad)
+          quantity.innerHTML = `${nCantidad}`;
+      })
+      quantity.innerHTML = `${nCantidad}`
 }
