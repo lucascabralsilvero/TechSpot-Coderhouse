@@ -87,5 +87,55 @@ const mostrarProductos = (data) => {
     contenedorProductos.appendChild(fragment); 
 }
 
+let carrito = {};
+
 //  Detectar botones;
 
+const detectarBotones = (data) => {
+    const botones = document.querySelectorAll(".card button");
+    botones.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const producto = data.find(item => item.id === parseInt(btn.dataset.id));
+            producto.cantidad = 1;
+            if(carrito.hasOwnProperty(producto.id)){
+                producto.cantidad = carrito[producto.id].cantidad + 1;
+            }
+            carrito[producto.id] = {...producto};
+
+            llenarCarrito();
+        })
+    })
+}
+
+// Capturar items en el carrito; 
+
+const items = d.getElementById("items");
+
+const llenarCarrito = () => {
+
+    // Limpiar antes de ciclo
+    items.innerHTML = "";
+
+    const template = d.getElementById("template-carrito").content;
+    const fragment = d.createDocumentFragment();
+
+    Object.values(carrito).forEach(producto => {
+
+        console.log(producto);
+
+        template.querySelectorAll("td")[0].querySelector("img").setAttribute("src", producto.imageUrl);
+        template.querySelectorAll("td")[1].textContent = producto.title;
+        template.querySelectorAll("td")[2].textContent = producto.cantidad;
+        template.querySelector("span").textContent = producto.precio * producto.cantidad;
+
+        // Botones
+    //    template.querySelector("btn-info").dataset.id = producto.id;
+        // template.querySelector("btn-danger").dataset.id = producto.id;
+
+        const clone = template.cloneNode(true); 
+        fragment.appendChild(clone);
+    })
+
+    items.appendChild(fragment);
+
+}

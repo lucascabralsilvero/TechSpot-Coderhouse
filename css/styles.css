@@ -63,11 +63,11 @@ main .card {
 .cart-modal-overlay .cart-modal {
   height: 100vh;
   width: 30%;
-  background-color: #323232;
+  background-color: white;
   float: right;
   overflow: scroll;
   overflow-x: hidden;
-  color: white;
+  color: #323232;
 }
 
 .cart-modal-overlay .cart-modal #close-btn {

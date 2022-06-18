@@ -64,11 +64,11 @@ main{
     .cart-modal{
         height: 100vh;
         width: 30%;
-        background-color: rgb(50,50,50);
+        background-color: white;
         float: right;
         overflow: scroll;
         overflow-x: hidden;
-        color: white;
+        color: rgb(50,50,50);
 
         #close-btn{
             cursor:pointer;
