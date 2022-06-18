@@ -127,14 +127,9 @@ const llenarCarrito = () => {
         template.querySelectorAll("td")[2].textContent = producto.cantidad;
         template.querySelector("span").textContent = producto.precio * producto.cantidad;
 
-        // Botones
-     /*  template.querySelector("btn-info").dataset.id = producto.id;
-      template.querySelector("btn-danger").dataset.id = producto.id; */
-
         const clone = template.cloneNode(true); 
         fragment.appendChild(clone);
     })
 
     items.appendChild(fragment);
-
 }
