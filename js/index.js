@@ -127,6 +127,10 @@ const llenarCarrito = () => {
         template.querySelectorAll("td")[2].textContent = producto.cantidad;
         template.querySelector("span").textContent = producto.price * producto.cantidad;
 
+        // Botones
+        template.querySelector(".btn-info").dataset.id = producto.id; 
+        template.querySelector(".btn-danger").dataset.id = producto.id; 
+
         const clone = template.cloneNode(true); 
         fragment.appendChild(clone);
     })
@@ -134,6 +138,7 @@ const llenarCarrito = () => {
     items.appendChild(fragment);
 
     mostrarFooter();
+    accionBtn();
 }
 
 const footer = d.getElementById("footer-carrito"); 
@@ -170,11 +175,37 @@ const mostrarFooter = () => {
       const boton = d.getElementById("vaciar-carrito");
       boton.addEventListener("click",()=>{
           carrito = {};
-        //   console.log(carrito);
+        //console.log(carrito);
           llenarCarrito();
           nCantidad = 0;
-          console.log(nCantidad)
+        //console.log(nCantidad)
           quantity.innerHTML = `${nCantidad}`;
       })
       quantity.innerHTML = `${nCantidad}`
+}
+
+// Botones agregar y eliminar
+const accionBtn = () => {
+// Accedemos a los botones
+const btnAgregar = d.querySelectorAll("#items .btn-info");
+const btnEliminar = d.querySelectorAll("#items .btn-danger");
+
+btnAgregar.forEach(btn => {btn.addEventListener("click",()=>{
+        // Detectamos el producto
+        const producto = carrito[btn.dataset.id];
+        producto.cantidad++; 
+      carrito[btn.dataset.id]={...producto};
+        llenarCarrito();
+})})
+
+btnEliminar.forEach(btn =>{btn.addEventListener("click",() =>{
+    const producto = carrito[btn.dataset.id];
+    producto.cantidad--;
+    if(producto.cantidad === 0){
+        delete carrito[btn.dataset.id];
+    } else {
+        carrito[btn.dataset.id] = {...producto};
+    }
+    llenarCarrito();
+})})
 }
