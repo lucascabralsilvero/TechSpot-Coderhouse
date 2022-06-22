@@ -240,14 +240,5 @@ formContent.addEventListener("submit", (e) => {
 
 // Checkbox filter
 
-let checkboxes = d.querySelectorAll(".checkboxes"); 
+const checkboxes = d.querySelectorAll(".checkboxes"); 
 
-for(let checkbox of checkboxes){
-    checkbox.addEventListener("click", function(){
-        if(this.checked == true){
-            d.querySelectorAll("")
-        } else {
-            console.log("unchecked")
-        }
-    })
-}
