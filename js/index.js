@@ -4,7 +4,10 @@ const d = document;
 
 document.addEventListener("DOMContentLoaded", () =>{
     fetchData();
+    searchFilters(".search-input","#funcionaLpm")
 }); 
+
+
 
 
 /********* Open Cart Modal *********/ 
@@ -44,13 +47,15 @@ const fetchData = async() => {
     try{
         const res = await fetch("./productos.json");
         const data = await res.json(); 
-        console.log(data); 
+        // console.log(data); 
         mostrarProductos(data);
         detectarBotones(data);  
     } catch(error){
         console.log(error);
     }
 }
+
+
 
 
 //  Mostrar datos en el HTML; 
@@ -203,9 +208,32 @@ btnEliminar.forEach(btn =>{btn.addEventListener("click",() =>{
     producto.cantidad--;
     if(producto.cantidad === 0){
         delete carrito[btn.dataset.id];
+        quantity.innerHTML = `0`;
     } else {
         carrito[btn.dataset.id] = {...producto};
     }
     llenarCarrito();
 })})
 }
+
+// Buscador
+
+function searchFilters(input,selector){
+    d.addEventListener("keyup", (e) => {
+        if(e.target.matches(input)){
+            // console.log(e.target.value);
+    d.querySelectorAll(selector).forEach((el) => el.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+    ?el.classList.remove("d-none")
+    :el.classList.add("d-none"));
+        }
+    })
+}
+
+
+//Sacamos comportamiento por defecto del form para evitar que recargue la página cuando damos enter
+
+const formContent = d.getElementById("form-content");
+
+formContent.addEventListener("submit", (e) => {
+    e.preventDefault();
+} )

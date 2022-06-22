@@ -105,6 +105,10 @@ main .card {
   color: #dc3545;
 }
 
+.filtro {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   main .carousel {
     padding-top: 7rem;
