@@ -4,7 +4,7 @@ const d = document;
 
 document.addEventListener("DOMContentLoaded", () =>{
     fetchData();
-    searchFilters(".search-input","#funcionaLpm")
+    searchFilters(".search-input","#card-container")
 }); 
 
 
@@ -237,3 +237,17 @@ const formContent = d.getElementById("form-content");
 formContent.addEventListener("submit", (e) => {
     e.preventDefault();
 } )
+
+// Checkbox filter
+
+let checkboxes = d.querySelectorAll(".checkboxes"); 
+
+for(let checkbox of checkboxes){
+    checkbox.addEventListener("click", function(){
+        if(this.checked == true){
+            d.querySelectorAll("")
+        } else {
+            console.log("unchecked")
+        }
+    })
+}
