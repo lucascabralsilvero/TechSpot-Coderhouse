@@ -4,12 +4,18 @@ $tablet: 768px;
 
 main{
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+   /*  background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%); */
+   background-color: white;
+
+    body.dark & {
+        background-color: $dark;
+    }
     .carousel{
         padding-top: 4rem;
     }
     .card{
         width: 18rem;
+        background-color: orange;
     }
 }
 
@@ -63,7 +69,7 @@ main{
                 line-height: 30px;
                 display: block;
                 background-color: none;
-                color: wheat;
+                color: white;
             }
         }
     }
@@ -73,6 +79,14 @@ main{
     background-color: $yellow;
     font-family: sans-serif; 
    z-index: 100;
+
+   body.dark & {
+    background-color: $dark;
+    border-bottom: 1px solid white;
+    a{
+        color: white;
+    }
+   }
 
     a{
         
@@ -124,7 +138,13 @@ main{
         background-color: $yellow;
         position:sticky;
         top: 3.5rem;
-        z-index: 100;   
+        z-index: 100;  
+        
+        body.dark & {
+            background-color: $dark;
+            border-bottom:1px solid white;
+            color: white;
+        }
     }
 }
 
