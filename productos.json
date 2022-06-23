@@ -4,63 +4,72 @@
         "title": "Intel Core i5 11400",
         "price": 28190,
         "imageUrl": "../images/productos/procesadores/intel-2.jpg",
-        "description": "Socket 1200 11th Gen Rocket Lake"
+        "description": "Socket 1200 11th Gen Rocket Lake",
+        "categoria": "procesador"
     },
     {
         "id": 2,
         "title": "Intel Core i5 11400F",
         "price": 22210,
         "imageUrl": "../images/productos/procesadores/intel-1.jpg",
-        "description": "Socket 1200 11th Gen Rocket Lake"
+        "description": "Socket 1200 11th Gen Rocket Lake",
+        "categoria": "procesador"
     },
     {
         "id": 3,
         "title": " Intel Core i5 11600KF",
         "price": 33650,
         "imageUrl": "../images/productos/procesadores/intel-2.jpg",
-        "description": "Socket 1200 11th Gen Rocket Lake"
+        "description": "Socket 1200 11th Gen Rocket Lake",
+        "categoria": "procesador"
     },
     {
         "id": 4,
         "title": "Intel Core i5 12400",
         "price": 37068,
         "imageUrl": "../images/productos/procesadores/intel-6.jpg",
-        "description": "Socket 1700 12th Gen"
+        "description": "Socket 1700 12th Gen",
+        "categoria": "procesador"
     },
     {
         "id": 5,
         "title": "Intel Core i7 11700K",
         "price": 55009,
         "imageUrl": "../images/productos/procesadores/intel-3.jpg",
-        "description": "Socket 1200 11th Gen Rocket Lake"
+        "description": "Socket 1200 11th Gen Rocket Lake",
+        "categoria": "procesador"
     },
     {
         "id": 6,
         "title": "Intel Core i7 12700F",
         "price": 51560,
         "imageUrl": "../images/productos/procesadores/intel-7.jpg",
-        "description": "4.9GHz Turbo 12th Gen Socket 1700 "
+        "description": "4.9GHz Turbo 12th Gen Socket 1700 ",
+        "categoria": "procesador"
     },
     {
         "id": 7,
         "title": "Intel Core i9 12900K",
         "price": 100420,
         "imageUrl": "../images/productos/procesadores/intel-5.jpg",
-        "description": "5.2GHz Turbo 12th Gen Socket 1700"
+        "description": "5.2GHz Turbo 12th Gen Socket 1700",
+        "categoria": "procesador"
     },
     {
         "id": 8,
         "title": "Intel Core i9 12900KF",
         "price": 93340,
         "imageUrl": "../images/productos/procesadores/intel-4.jpg",
-        "description": "5.2GHz Turbo 12th Gen Socket 1700"
+        "description": "5.2GHz Turbo 12th Gen Socket 1700",
+        "categoria": "procesador"
     },
     {
         "id": 9,
         "title": "AMD Ryzen 5 4500",
         "price": 21540,
         "imageUrl": "../images/productos/procesadores/ryzen-1.jpg",
-        "description": "Wraith Stealth Cooler AM4 "
+        "description": "Wraith Stealth Cooler AM4 ",
+        "categoria": "procesador"
     }
     ,
     {
@@ -68,272 +77,311 @@
         "title": "AMD Ryzen 5 5500",
         "price": 22700,
         "imageUrl": "../images/productos/procesadores/ryzen-1.jpg",
-        "description": "4.2GHz Turbo + Wraith Stealth Cooler "
+        "description": "4.2GHz Turbo + Wraith Stealth Cooler ",
+        "categoria": "procesador"
     },
     {
         "id": 11,
         "title": "AMD Ryzen 5 5600",
         "price": 32170,
         "imageUrl": "../images/productos/procesadores/ryzen-1.jpg",
-        "description": "4.4GHz Turbo + Wraith Stealth Cooler"
+        "description": "4.4GHz Turbo + Wraith Stealth Cooler",
+        "categoria": "procesador"
     },
     {
         "id": 12,
         "title": "AMD Ryzen 5 5600X",
         "price": 36000,
         "imageUrl": "../images/productos/procesadores/ryzen-1.jpg",
-        "description": "4.6GHz Turbo AM4 + Wraith Stealth Cooler"
+        "description": "4.6GHz Turbo AM4 + Wraith Stealth Cooler",
+        "categoria": "procesador"
     },
     {
         "id": 13,
         "title": "AMD Ryzen 7 5700X",
         "price": 48080,
         "imageUrl": "../images/productos/procesadores/ryzen-2.jpg",
-        "description": "4.6GHz Turbo AM4 - No incluye Cooler"
+        "description": "4.6GHz Turbo AM4 - No incluye Cooler",
+        "categoria": "procesador"
     },
     {
         "id": 14,
         "title": "AMD Ryzen 7 5800X",
         "price": 53990,
         "imageUrl": "../images/productos/procesadores/ryzen-2.jpg",
-        "description": "4.7GHz Turbo AM4 - No incluye Cooler"
+        "description": "4.7GHz Turbo AM4 - No incluye Cooler",
+        "categoria": "procesador"
     },
     {
         "id": 15,
         "title": "AMD Ryzen 9 5900X",
         "price": 68238,
         "imageUrl": "../images/productos/procesadores/ryzen-3.jpg",
-        "description": "4.8GHz Turbo AM4 - No incluye Cooler"
+        "description": "4.8GHz Turbo AM4 - No incluye Cooler",
+        "categoria": "procesador"
     },
     {
         "id": 16,
         "title": "AMD Ryzen 9 5950X",
         "price": 90905,
         "imageUrl": "../images/productos/procesadores/ryzen-3.jpg",
-        "description": "4.9GHz Turbo AM4 - No incluye Cooler"
+        "description": "4.9GHz Turbo AM4 - No incluye Cooler",
+        "categoria": "procesador"
     },
     {
         "id": 17,
         "title": "MSI MAG B560M Mortar",
         "price": 23650,
         "imageUrl": "../images/productos/motherboards/amd/1.jpg",
-        "description": "Intel 11th Gen Socket 1200"
+        "description": "Intel 11th Gen Socket 1200",
+        "categoria": "motherboard"
     },
     {
         "id": 18,
         "title": "ASUS TUF GAMING B560M-PLUS",
         "price": 23000,
         "imageUrl": "../images/productos/motherboards/amd/2.jpg",
-        "description": "Intel 11th Gen Socket 1200"
+        "description": "Intel 11th Gen Socket 1200",
+        "categoria": "motherboard"
     },
     {
         "id": 19,
         "title": "ASUS PRIME B560M-A",
         "price": 16030,
         "imageUrl": "../images/productos/motherboards/amd/3.jpg",
-        "description": "S1200 11th Gen PCIe 4.0"
+        "description": "S1200 11th Gen PCIe 4.0",
+        "categoria": "motherboard"
     },
     {
         "id": 20,
         "title": "MSI B560M PRO-VDH",
         "price": 15380,
         "imageUrl": "../images/productos/motherboards/amd/4.jpg",
-        "description": "mATX 11va gen S1200"
+        "description": "mATX 11va gen S1200",
+        "categoria": "motherboard"
     },
     {
         "id": 21,
         "title": "Gigabyte B560M-DS3H",
         "price": 13800,
         "imageUrl": "../images/productos/motherboards/amd/5.jpg",
-        "description": "Socket 1200 11th Gen"
+        "description": "Socket 1200 11th Gen",
+        "categoria": "motherboard"
     },
     {
         "id": 22,
         "title": "ASUS Z690 ROG MAXIMUS HERO",
         "price": 98430,
         "imageUrl": "../images/productos/motherboards/amd/6.jpg",
-        "description": "Intel 12th Gen"
+        "description": "Intel 12th Gen",
+        "categoria": "motherboard"
     },
     {
         "id": 23,
         "title": "ASUS TUF Z690-PLUS",
         "price": 56450,
         "imageUrl": "../images/productos/motherboards/amd/7.jpg",
-        "description": "Wifi Intel 12th Gen S1700"
+        "description": "Wifi Intel 12th Gen S1700",
+        "categoria": "motherboard"
     },
     {
         "id": 24,
         "title": "ASUS ROG STRIX Z590-E",
         "price": 55990,
         "imageUrl": "../images/productos/motherboards/amd/8.jpg",
-        "description": "GAMING Wifi Socket 1200 10th/11th Gen"
+        "description": "GAMING Wifi Socket 1200 10th/11th Gen",
+        "categoria": "motherboard"
     },
     {
         "id": 25,
         "title": "Asrock B450 Steel Legend",
         "price": 21500,
         "imageUrl": "../images/productos/motherboards/intel/1.jpg",
-        "description": "AM4 RGB Dual M.2 Dual USB 3.1"
+        "description": "AM4 RGB Dual M.2 Dual USB 3.1",
+        "categoria": "motherboard"
     },
     {
         "id": 26,
         "title": "ASUS ROG STRIX B450-F GAMING II",
         "price": 27170,
         "imageUrl": "../images/productos/motherboards/intel/2.jpg",
-        "description": "AM4"
+        "description": "AM4",
+        "categoria": "motherboard"
     },
     {
         "id": 27,
         "title": "ASUS PRIME X570-P",
         "price": 29410,
         "imageUrl": "../images/productos/motherboards/intel/3.jpg",
-        "description": "AM4 PCIe Gen4 Dual M.2"
+        "description": "AM4 PCIe Gen4 Dual M.2",
+        "categoria": "motherboard"
     },
     {
         "id": 28,
         "title": "Asrock X570 Steel Legend",
         "price": 31380,
         "imageUrl": "../images/productos/motherboards/intel/4.jpg",
-        "description": "AM4 PCIe Gen4"
+        "description": "AM4 PCIe Gen4",
+        "categoria": "motherboard"
     },
     {
         "id": 29,
         "title": "Asrock X570 Extreme4",
         "price": 37730,
         "imageUrl": "../images/productos/motherboards/intel/5.jpg",
-        "description": "AM4 PCIe Gen4 RGB Polychrome Sync"
+        "description": "AM4 PCIe Gen4 RGB Polychrome Sync",
+        "categoria": "motherboard"
     },
     {
         "id": 30,
         "title": "Asrock X570 Taichi",
         "price": 45670,
         "imageUrl": "../images/productos/motherboards/intel/6.jpg",
-        "description": "AM4 PCIe Gen4 Dual Hyper M.2 RGB"
+        "description": "AM4 PCIe Gen4 Dual Hyper M.2 RGB",
+        "categoria": "motherboard"
     },
     {
         "id": 31,
         "title": "Asrock B550",
         "price": 47600,
         "imageUrl": "../images/productos/motherboards/intel/7.jpg",
-        "description": "Taichi Razer Edition AM4"
+        "description": "Taichi Razer Edition AM4",
+        "categoria": "motherboard"
     },
     {
         "id": 32,
         "title": "ASUS ROG STRIX B550-XE",
         "price": 49190,
         "imageUrl": "../images/productos/motherboards/intel/8.jpg",
-        "description": "Gaming Wifi AM4"
+        "description": "Gaming Wifi AM4",
+        "categoria": "motherboard"
     },
     {
         "id": 33,
         "title": "XFX Radeon RX 6500 XT",
         "price": 47610,
         "imageUrl": "../images/productos/placas-graficas/amd/1.jpg",
-        "description": "Black 4GB GDDR6 Speedster QICK210"
+        "description": "Black 4GB GDDR6 Speedster QICK210",
+        "categoria": "grafica"
     },
     {
         "id": 34,
         "title": "Asrock Radeon RX 5500 XT",
         "price": 54000,
         "imageUrl": "../images/productos/placas-graficas/amd/2.jpg",
-        "description": "4GB GDDR6 CHALLENGER D OC"
+        "description": "4GB GDDR6 CHALLENGER D OC",
+        "categoria": "grafica"
     },
     {
         "id": 35,
         "title": "XFX Radeon RX 570",
         "price": 60000,
         "imageUrl": "../images/productos/placas-graficas/amd/3.jpg",
-        "description": "8GB DDR5 RS XXX Edition"
+        "description": "8GB DDR5 RS XXX Edition",
+        "categoria": "grafica"
     },
     {
         "id": 36,
         "title": "XFX Radeon RX 6600",
         "price": 82760,
         "imageUrl": "../images/productos/placas-graficas/amd/4.jpg",
-        "description": "8GB GDDR6 Speedster SWFT210"
+        "description": "8GB GDDR6 Speedster SWFT210",
+        "categoria": "grafica"
     },
     {
         "id": 37,
         "title": "Asrock Radeon RX 5500 XT",
         "price": 90000,
         "imageUrl": "../images/productos/placas-graficas/amd/5.jpg",
-        "description": "8G B GDDR6 Phantom Gaming D OC"
+        "description": "8G B GDDR6 Phantom Gaming D OC",
+        "categoria": "grafica"
     },
     {
         "id": 38,
         "title": "Asrock RX 580",
         "price": 90000,
         "imageUrl": "../images/productos/placas-graficas/amd/6.jpg",
-        "description": "8GB OC Phantom Gaming X OC "
+        "description": "8GB OC Phantom Gaming X OC ",
+        "categoria": "grafica"
     },
     {
         "id": 39,
         "title": "MSI Radeon RX 6700 XT",
         "price": 92900,
         "imageUrl": "../images/productos/placas-graficas/amd/7.jpg",
-        "description": "12GB GDDR6 MECH 2X"
+        "description": "12GB GDDR6 MECH 2X",
+        "categoria": "grafica"
     },
     {
         "id": 40,
         "title": "XFX Radeon RX 6700 XT",
         "price": 93900,
         "imageUrl": "../images/productos/placas-graficas/amd/8.jpg",
-        "description": "BLACK 12GB GDDR6 Speedster MERC 319"
+        "description": "BLACK 12GB GDDR6 Speedster MERC 319",
+        "categoria": "grafica"
     },
     {
         "id": 41,
         "title": "GALAX GeForce GTX 1660 Ti ",
         "price": 52900,
         "imageUrl": "../images/productos/placas-graficas/nvidia/1.jpg",
-        "description": "6GB GDDR6 1-Click OC"
+        "description": "6GB GDDR6 1-Click OC",
+        "categoria": "grafica"
     },
     {
         "id": 42,
         "title": "Zotac GeForce RTX 2060",
         "price": 80000,
         "imageUrl": "../images/productos/placas-graficas/nvidia/2.jpg",
-        "description": "6GB GDDR6 Twin Fan"
+        "description": "6GB GDDR6 Twin Fan",
+        "categoria": "grafica"
     },
     {
         "id": 43,
         "title": "ASUS GeForce GTX 1660 SUPER",
         "price": 81500,
         "imageUrl": "../images/productos/placas-graficas/nvidia/3.jpg",
-        "description": "6GB GDDR6 Phoenix OC"
+        "description": "6GB GDDR6 Phoenix OC",
+        "categoria": "grafica"
     },
     {
         "id": 44,
         "title": "Zotac GeForce RTX 3060",
         "price": 85000,
         "imageUrl": "../images/productos/placas-graficas/nvidia/4.jpg",
-        "description": "GDDR6 Twin Edge LHR"
+        "description": "GDDR6 Twin Edge LHR",
+        "categoria": "grafica"
     },
     {
         "id": 45,
         "title": "Zotac GeForce RTX 3070 Ti",
         "price": 148900,
         "imageUrl": "../images/productos/placas-graficas/nvidia/5.jpg",
-        "description": " 8GB GDDR6X Trinity price"
+        "description": " 8GB GDDR6X Trinity price",
+        "categoria": "grafica"
     },
     {
         "id": 46,
         "title": "Zotac GeForce RTX 3080 Ti",
         "price": 208900,
         "imageUrl": "../images/productos/placas-graficas/nvidia/6.jpg",
-        "description": "12GB GDDR6X Trinity price"
+        "description": "12GB GDDR6X Trinity price",
+        "categoria": "grafica"
     },
     {
         "id": 47,
         "title": "GALAX GeForce RTX 3080 Ti",
         "price": 264000,
         "imageUrl": "../images/productos/placas-graficas/nvidia/7.jpg",
-        "description": "12GB GDDR6X SG 1-Click OC price"
+        "description": "12GB GDDR6X SG 1-Click OC price",
+        "categoria": "grafica"
     },
     {
         "id": 48,
         "title": "ASUS GeForce RTX 3090",
         "price": 489500,
         "imageUrl": "../images/productos/placas-graficas/nvidia/8.jpg",
-        "description": "24GB GDDR6X TUF GAMING OC price"
+        "description": "24GB GDDR6X TUF GAMING OC price",
+        "categoria": "grafica"
     }
 ]

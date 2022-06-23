@@ -4,7 +4,8 @@ const d = document;
 
 document.addEventListener("DOMContentLoaded", () =>{
     fetchData();
-    searchFilters(".search-input","#card-container")
+    searchFilters(".search-input","#card-container");
+    darkTheme(".dark-theme-btn", "dark-mode");
 }); 
 
 
@@ -50,6 +51,7 @@ const fetchData = async() => {
         // console.log(data); 
         mostrarProductos(data);
         detectarBotones(data);  
+        // filtroCategorias(data);
     } catch(error){
         console.log(error);
     }
@@ -80,7 +82,9 @@ const mostrarProductos = (data) => {
         // price
         template.querySelector("span").textContent = producto.price;
         // Description
-        template.querySelector("p").textContent = producto.description;
+        template.querySelectorAll("p")[0].textContent = producto.description;
+        // Categoria
+        template.querySelectorAll("p")[1].textContent = producto.categoria;
         // Button
         template.querySelector("button").dataset.id = producto.id;
         // Clonamos
@@ -240,5 +244,19 @@ formContent.addEventListener("submit", (e) => {
 
 // Checkbox filter
 
-const checkboxes = d.querySelectorAll(".checkboxes"); 
+/* const procesadores = d.querySelector(".procesador"); 
 
+        procesadores.addEventListener("change",()=>{
+            if(procesadores.checked == true){      
+                 d.querySelectorAll(".card").forEach((el) => el.classList.add("d-none"))
+                } else {
+                    d.querySelectorAll(".card").forEach((el) => el.classList.remove("d-none"))
+                }
+            })
+    
+     
+ */
+
+
+// Tema oscuro
+ 
