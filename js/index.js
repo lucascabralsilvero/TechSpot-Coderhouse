@@ -260,7 +260,6 @@ formContent.addEventListener("submit", (e) => {
 // Tema oscuro
  
 const btnSwitch = d.querySelector("#switch"); 
-
 btnSwitch.addEventListener("click", ()=> {
     d.body.classList.toggle("dark");
     btnSwitch.classList.toggle("active");
