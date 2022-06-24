@@ -5,6 +5,11 @@ const d = document;
 document.addEventListener("DOMContentLoaded", () =>{
     fetchData();
     searchFilters(".search-input","#card-container");
+
+    if (localStorage.getItem('carrito')) {
+        carrito = JSON.parse(localStorage.getItem('carrito'))
+        llenarCarrito()
+    }
 }); 
 
 
@@ -147,6 +152,8 @@ const llenarCarrito = () => {
 
     mostrarFooter();
     accionBtn();
+
+    localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
 const footer = d.getElementById("footer-carrito"); 
