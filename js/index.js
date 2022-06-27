@@ -264,10 +264,28 @@ formContent.addEventListener("submit", (e) => {
  */
 
 
-// Tema oscuro
+// Dark Mode
  
 const btnSwitch = d.querySelector("#switch"); 
 btnSwitch.addEventListener("click", ()=> {
     d.body.classList.toggle("dark");
     btnSwitch.classList.toggle("active");
-})
+
+    // Guardar en localStorage
+
+    if(d.body.classList.contains("dark")){
+        localStorage.setItem("dark-mode","true"); 
+    } else {
+        localStorage.setItem("dark-mode","false"); 
+    }
+
+});
+
+if (localStorage.getItem("dark-mode") === "true") {
+    d.body.classList.add("dark");
+    btnSwitch.classList.add("active");
+    
+} else{
+    d.body.classList.remove("dark");
+    btnSwitch.classList.remove("active");
+}
