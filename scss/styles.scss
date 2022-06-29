@@ -142,6 +142,11 @@ main{
 
         #close-btn{
             cursor:pointer;
+
+            &:hover{
+                transition: all .2s ease;
+                color: $red;
+            }
         }
     }
 }
@@ -152,7 +157,10 @@ main{
         position:sticky;
         top: 3.5rem;
         z-index: 100; 
-        
+
+        .check{
+            cursor: pointer;
+        }
         body.dark & {
             transition: 0.3s ease-in-out; 
             background-color: $dark;

@@ -250,18 +250,36 @@ formContent.addEventListener("submit", (e) => {
 
 // Checkbox filter
 
-/* const procesadores = d.querySelector(".procesador"); 
-
-        procesadores.addEventListener("change",()=>{
-            if(procesadores.checked == true){      
-                 d.querySelectorAll(".card").forEach((el) => el.classList.add("d-none"))
-                } else {
-                    d.querySelectorAll(".card").forEach((el) => el.classList.remove("d-none"))
-                }
-            })
+   const procesadores = d.querySelector(".procesador"); 
+ const motherboards = d.querySelector(".motherboard"); 
+ const graficas = d.querySelector(".grafica"); 
     
-     
- */
+  procesadores.addEventListener("click", () => {
+    if(procesadores.checked){
+        [...d.querySelectorAll(".card")].filter(procesador => !procesador.textContent.includes("procesador")).forEach((el) => el.classList.add("d-none"));
+    } else {
+        [...d.querySelectorAll(".card")].filter(procesador => !procesador.textContent.includes("procesador")).forEach((el) => el.classList.remove("d-none"));
+    }
+ })
+
+ motherboards.addEventListener("click", () => {
+    if(motherboards.checked){
+        [...d.querySelectorAll(".card")].filter(motherboard => !motherboard.textContent.includes("motherboard")).forEach((el) => el.classList.add("d-none"));
+    } else {
+        [...d.querySelectorAll(".card")].filter(motherboard => !motherboard.textContent.includes("motherboard")).forEach((el) => el.classList.remove("d-none"));
+    }
+ })
+
+
+ graficas.addEventListener("click", () => {
+    if(graficas.checked){
+        [...d.querySelectorAll(".card")].filter(grafica => !grafica.textContent.includes("grafica")).forEach((el) => el.classList.add("d-none"));
+    } else {
+        [...d.querySelectorAll(".card")].filter(grafica => !grafica.textContent.includes("grafica")).forEach((el) => el.classList.remove("d-none"));
+    }
+ })
+  
+ 
 
 
 // Dark Mode

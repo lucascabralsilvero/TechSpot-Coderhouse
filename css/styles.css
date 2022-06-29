@@ -152,12 +152,22 @@ body.dark .search-bottom {
   cursor: pointer;
 }
 
+.cart-modal-overlay .cart-modal #close-btn:hover {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  color: #dc3545;
+}
+
 .section-2 .filters {
   background-color: #ffc107;
   position: -webkit-sticky;
   position: sticky;
   top: 3.5rem;
   z-index: 100;
+}
+
+.section-2 .filters .check {
+  cursor: pointer;
 }
 
 body.dark .section-2 .filters {
