@@ -56,6 +56,7 @@ const fetchData = async() => {
         mostrarProductos(data);
         detectarBotones(data);  
         // filtroCategorias(data);
+        priceFilter(data);
     } catch(error){
         console.log(error);
     }
@@ -307,3 +308,26 @@ if (localStorage.getItem("dark-mode") === "true") {
     d.body.classList.remove("dark");
     btnSwitch.classList.remove("active");
 }
+
+// Price Filter
+
+const priceFilter = (productos) => {
+
+    const priceInput = d.querySelector(".price-filter");
+    const priceValue = d.querySelector(".price-value"); 
+
+    // Precio máximo
+    let maxPrice  = productos.map((item) => item.price);
+    maxPrice = Math.max(...maxPrice);
+    priceInput.value = maxPrice; 
+    priceInput.max = maxPrice; 
+    priceInput.min = 0; 
+    priceValue.textContent = `$${maxPrice}`;
+ 
+    
+    priceInput.addEventListener("input", () => {
+        const value = +(priceInput.value); 
+        priceValue.textContent = `$${value}`;
+        let newStore =  productos.filter(producto => producto.price <= value)
+    })
+// 
