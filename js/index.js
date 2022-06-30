@@ -328,6 +328,8 @@ const priceFilter = (productos) => {
     priceInput.addEventListener("input", () => {
         const value = +(priceInput.value); 
         priceValue.textContent = `$${value}`;
-        let newStore =  productos.filter(producto => producto.price <= value)
+        // let newStore =  productos.filter(producto => producto.price <= value)
+         let newStore =  productos.map(producto => producto.price );
+       let cards = [...d.querySelectorAll(".card")]; 
     })
-// 
+}
