@@ -55,8 +55,6 @@ const fetchData = async() => {
         // console.log(data); 
         mostrarProductos(data);
         detectarBotones(data);  
-        // filtroCategorias(data);
-        priceFilter(data);
     } catch(error){
         console.log(error);
     }
@@ -72,14 +70,53 @@ const fetchData = async() => {
 const contenedorProductos = d.getElementById("contenedor-productos");
 
 const mostrarProductos = (data) => {
+    const priceInput = d.querySelector(".price-filter");
+    const priceValue = d.querySelector(".price-value"); 
 
+    // Precio máximo
+    let maxPrice  = data.map((item) => item.price);
+    maxPrice = Math.max(...maxPrice);
+    priceInput.value = maxPrice; 
+    priceInput.max = maxPrice; 
+    priceInput.min = 0; 
+    priceValue.textContent = `$${maxPrice}`;
+ 
     const template = d.getElementById("template-productos").content;
 
     const fragment = d.createDocumentFragment(); 
-
     //Recorremos Data; 
-
     data.forEach(producto => {
+        const value = +(priceInput.value); 
+        // Actualizo el precio 
+        priceValue.textContent = `$${value}`;
+        if(producto.price <= value){
+    // img
+    template.querySelector("img").setAttribute("src", producto.imageUrl);
+    // title
+    template.querySelector("h6").textContent = producto.title;
+    // price
+    template.querySelector("span").textContent = producto.price;
+    // Description
+    template.querySelectorAll("p")[0].textContent = producto.description;
+    // Categoria
+    template.querySelectorAll("p")[1].textContent = producto.categoria;
+    // Button
+    template.querySelector("button").dataset.id = producto.id;
+    // Clonamos
+    const clone = template.cloneNode(true); 
+    fragment.appendChild(clone);      
+    contenedorProductos.appendChild(fragment)
+}
+})
+
+priceInput.addEventListener("input", () => {
+
+    contenedorProductos.innerHTML= "";
+    data.forEach(producto => {
+            const value = +(priceInput.value); 
+            // Actualizo el precio 
+            priceValue.textContent = `$${value}`;
+            if(producto.price <= value){
         // img
         template.querySelector("img").setAttribute("src", producto.imageUrl);
         // title
@@ -94,11 +131,10 @@ const mostrarProductos = (data) => {
         template.querySelector("button").dataset.id = producto.id;
         // Clonamos
         const clone = template.cloneNode(true); 
-
-        fragment.appendChild(clone); 
-
-    })
-    contenedorProductos.appendChild(fragment); 
+        fragment.appendChild(clone);      
+        contenedorProductos.appendChild(fragment)
+    }
+})})
 }
 
 let carrito = {};
@@ -107,6 +143,7 @@ let carrito = {};
 
 const detectarBotones = (data) => {
     const botones = document.querySelectorAll(".card button");
+    
     botones.forEach(btn => {
         btn.addEventListener("click", () => {
             const producto = data.find(item => item.id === parseInt(btn.dataset.id));
@@ -115,7 +152,7 @@ const detectarBotones = (data) => {
                 producto.cantidad = carrito[producto.id].cantidad + 1;
             }
             carrito[producto.id] = {...producto};
-
+            console.log(producto)
             llenarCarrito();
         })
     })
@@ -135,7 +172,7 @@ const llenarCarrito = () => {
 
     Object.values(carrito).forEach(producto => {
 
-        console.log(producto);
+       
         template.querySelectorAll("td")[0].querySelector("img").setAttribute("src", producto.imageUrl);
         template.querySelectorAll("td")[1].textContent = producto.title;
         template.querySelectorAll("td")[2].textContent = producto.cantidad;
@@ -280,8 +317,6 @@ formContent.addEventListener("submit", (e) => {
     }
  })
   
- 
-
 
 // Dark Mode
  
@@ -307,30 +342,4 @@ if (localStorage.getItem("dark-mode") === "true") {
 } else{
     d.body.classList.remove("dark");
     btnSwitch.classList.remove("active");
-}
-
-// Price Filter
-
-const priceFilter = (productos) => {
-
-    const priceInput = d.querySelector(".price-filter");
-    const priceValue = d.querySelector(".price-value"); 
-
-    // Precio máximo
-    let maxPrice  = productos.map((item) => item.price);
-    maxPrice = Math.max(...maxPrice);
-    priceInput.value = maxPrice; 
-    priceInput.max = maxPrice; 
-    priceInput.min = 0; 
-    priceValue.textContent = `$${maxPrice}`;
- 
-    
-    priceInput.addEventListener("input", () => {
-        const value = +(priceInput.value); 
-        // Actualizo el precio 
-        priceValue.textContent = `$${value}`;
-        // Filtrar productos según input
-         let newStore =  productos.map(producto => producto.price );
-       let cards = [...d.querySelectorAll(".card")]; 
-    })
 }
