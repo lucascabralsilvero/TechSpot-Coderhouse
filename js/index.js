@@ -54,13 +54,12 @@ const fetchData = async() => {
         const data = await res.json(); 
         // console.log(data); 
         mostrarProductos(data);
+        actualizarProductos(data);
         detectarBotones(data);  
     } catch(error){
         console.log(error);
     }
 }
-
-
 
 
 //  Mostrar datos en el HTML; 
@@ -70,26 +69,11 @@ const fetchData = async() => {
 const contenedorProductos = d.getElementById("contenedor-productos");
 
 const mostrarProductos = (data) => {
-    const priceInput = d.querySelector(".price-filter");
-    const priceValue = d.querySelector(".price-value"); 
-
-    // Precio máximo
-    let maxPrice  = data.map((item) => item.price);
-    maxPrice = Math.max(...maxPrice);
-    priceInput.value = maxPrice; 
-    priceInput.max = maxPrice; 
-    priceInput.min = 0; 
-    priceValue.textContent = `$${maxPrice}`;
- 
     const template = d.getElementById("template-productos").content;
 
     const fragment = d.createDocumentFragment(); 
     //Recorremos Data; 
-    data.forEach(producto => {
-        const value = +(priceInput.value); 
-        // Actualizo el precio 
-        priceValue.textContent = `$${value}`;
-        if(producto.price <= value){
+     data.forEach(producto => {
     // img
     template.querySelector("img").setAttribute("src", producto.imageUrl);
     // title
@@ -106,36 +90,60 @@ const mostrarProductos = (data) => {
     const clone = template.cloneNode(true); 
     fragment.appendChild(clone);      
     contenedorProductos.appendChild(fragment)
+})  
+
+
+ 
 }
-})
 
-priceInput.addEventListener("input", () => {
+const actualizarProductos = (data) => {
 
-    contenedorProductos.innerHTML= "";
-    data.forEach(producto => {
+    const priceInput = d.querySelector(".price-filter");
+    const priceValue = d.querySelector(".price-value"); 
+
+    // Precio máximo
+    let maxPrice  = data.map((item) => item.price);
+    maxPrice = Math.max(...maxPrice);
+    priceInput.value = maxPrice; 
+    priceInput.max = maxPrice; 
+    priceInput.min = 0; 
+    priceValue.textContent = `$${maxPrice}`;
+
+    const template = d.getElementById("template-productos").content;
+
+    const fragment = d.createDocumentFragment(); 
+
+
+   priceInput.addEventListener("input", () => {
+        contenedorProductos.innerHTML= "";
+        data.forEach(producto => {
             const value = +(priceInput.value); 
             // Actualizo el precio 
             priceValue.textContent = `$${value}`;
             if(producto.price <= value){
-        // img
-        template.querySelector("img").setAttribute("src", producto.imageUrl);
-        // title
-        template.querySelector("h6").textContent = producto.title;
-        // price
-        template.querySelector("span").textContent = producto.price;
-        // Description
-        template.querySelectorAll("p")[0].textContent = producto.description;
-        // Categoria
-        template.querySelectorAll("p")[1].textContent = producto.categoria;
-        // Button
-        template.querySelector("button").dataset.id = producto.id;
-        // Clonamos
-        const clone = template.cloneNode(true); 
-        fragment.appendChild(clone);      
-        contenedorProductos.appendChild(fragment)
-    }
-})})
+                // img
+                template.querySelector("img").setAttribute("src", producto.imageUrl);
+                // title
+                template.querySelector("h6").textContent = producto.title;
+                // price
+                template.querySelector("span").textContent = producto.price;
+                // Description
+                template.querySelectorAll("p")[0].textContent = producto.description;
+                // Categoria
+                template.querySelectorAll("p")[1].textContent = producto.categoria;
+                // Button
+                template.querySelector("button").dataset.id = producto.id;
+                // Clonamos
+                const clone = template.cloneNode(true); 
+                fragment.appendChild(clone); 
+           contenedorProductos.appendChild(fragment);  
+        }
+    })
+    detectarBotones(data);
+            })
 }
+
+
 
 let carrito = {};
 
@@ -153,7 +161,7 @@ const detectarBotones = (data) => {
             }
             carrito[producto.id] = {...producto};
             console.log(producto)
-            llenarCarrito();
+            llenarCarrito(); 
         })
     })
 }
