@@ -1,6 +1,7 @@
 @import "colors"; 
 /* Media query */
 $tablet: 768px; 
+$desktop: 992px; 
 
 main{
     font-family: 'Poppins', sans-serif;
@@ -249,5 +250,17 @@ main{
             width: 100%;
         }
     }
+
+}
+
+@media only screen and (max-width: $desktop){
+        .nav-item{
+            .nav-link{
+                .cart-quantity{
+                    left: 1.7rem;
+                }
+            }
+        }
+    
 
 }

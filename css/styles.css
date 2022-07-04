@@ -250,4 +250,10 @@ body.dark .footer h5 i:hover {
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .nav-item .nav-link .cart-quantity {
+    left: 1.7rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
