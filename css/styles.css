@@ -183,6 +183,21 @@ body.dark .section-2 .filters {
   padding-bottom: 4rem;
 }
 
+.card-container .empty-img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.card-container .empty {
+  color: red;
+  margin-bottom: 20rem;
+}
+
+.card-container .empty-dark {
+  color: #ffc107;
+  margin-bottom: 20rem;
+}
+
 .footer {
   background-color: #ffc107;
   height: 4rem;

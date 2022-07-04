@@ -68,6 +68,7 @@ const fetchData = async() => {
 
 const contenedorProductos = d.getElementById("contenedor-productos");
 
+
 const mostrarProductos = (data) => {
     const template = d.getElementById("template-productos").content;
 
@@ -90,6 +91,7 @@ const mostrarProductos = (data) => {
     const clone = template.cloneNode(true); 
     fragment.appendChild(clone);      
     contenedorProductos.appendChild(fragment)
+
 })  
 
 
@@ -104,6 +106,9 @@ const actualizarProductos = (data) => {
     // Precio máximo
     let maxPrice  = data.map((item) => item.price);
     maxPrice = Math.max(...maxPrice);
+    let minPrice  = data.map((item) => item.price);
+    minPrice = Math.min(...minPrice);
+    console.log(minPrice)
     priceInput.value = maxPrice; 
     priceInput.max = maxPrice; 
     priceInput.min = 0; 
@@ -137,10 +142,24 @@ const actualizarProductos = (data) => {
                 const clone = template.cloneNode(true); 
                 fragment.appendChild(clone); 
            contenedorProductos.appendChild(fragment);  
-        }
+            }
+
+            if( value <= minPrice){
+                contenedorProductos.innerHTML = `
+                <img class= "empty-img" src ="./images/productos/empty/empty.png">
+                <h3 class = "empty text-center">Ningún producto coincide con tus criterios de búsqueda!</h3>`
+
+                if(d.body.classList.contains("dark")){
+                    contenedorProductos.innerHTML = `
+                <img class= "empty-img" src ="./images/productos/empty/empty-white.png">
+                <h3 class = "empty-dark text-center">Ningún producto coincide con tus criterios de búsqueda!</h3>`
+                }
+           }
+        })
+     detectarBotones(data);
     })
-    detectarBotones(data);
-            })
+
+   
 }
 
 
@@ -302,29 +321,41 @@ formContent.addEventListener("submit", (e) => {
     
   procesadores.addEventListener("click", () => {
     if(procesadores.checked){
+        motherboards.setAttribute("disabled","");
+        graficas.setAttribute("disabled","");
         [...d.querySelectorAll(".card")].filter(procesador => !procesador.textContent.includes("procesador")).forEach((el) => el.classList.add("d-none"));
     } else {
         [...d.querySelectorAll(".card")].filter(procesador => !procesador.textContent.includes("procesador")).forEach((el) => el.classList.remove("d-none"));
+        motherboards.removeAttribute("disabled","");
+        graficas.removeAttribute("disabled","");
     }
  })
 
  motherboards.addEventListener("click", () => {
     if(motherboards.checked){
+        procesadores.setAttribute("disabled","");
+        graficas.setAttribute("disabled","");
         [...d.querySelectorAll(".card")].filter(motherboard => !motherboard.textContent.includes("motherboard")).forEach((el) => el.classList.add("d-none"));
     } else {
         [...d.querySelectorAll(".card")].filter(motherboard => !motherboard.textContent.includes("motherboard")).forEach((el) => el.classList.remove("d-none"));
+        procesadores.removeAttribute("disabled","");
+        graficas.removeAttribute("disabled","");
     }
  })
 
 
  graficas.addEventListener("click", () => {
     if(graficas.checked){
+        procesadores.setAttribute("disabled","");
+        motherboards.setAttribute("disabled","");
         [...d.querySelectorAll(".card")].filter(grafica => !grafica.textContent.includes("grafica")).forEach((el) => el.classList.add("d-none"));
+        console.log(contenedorProductos);
     } else {
         [...d.querySelectorAll(".card")].filter(grafica => !grafica.textContent.includes("grafica")).forEach((el) => el.classList.remove("d-none"));
+        procesadores.removeAttribute("disabled","");
+        motherboards.removeAttribute("disabled","");
     }
  })
-  
 
 // Dark Mode
  

@@ -173,6 +173,19 @@ main{
 .card-container{
     padding-top: 8rem;
     padding-bottom: 4rem;
+
+    .empty-img{
+        width: 20rem;
+        height: 20rem;
+    }
+    .empty{
+        color: red;
+        margin-bottom: 20rem;
+    }
+    .empty-dark{
+        color: $yellow;
+        margin-bottom: 20rem;
+    }
 }
 
 .footer{
