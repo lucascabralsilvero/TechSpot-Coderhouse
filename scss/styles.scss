@@ -2,6 +2,7 @@
 /* Media query */
 $tablet: 768px; 
 $desktop: 992px; 
+$mobile: 414px;
 
 main{
     font-family: 'Poppins', sans-serif;
@@ -261,6 +262,4 @@ main{
                 }
             }
         }
-    
-
 }
