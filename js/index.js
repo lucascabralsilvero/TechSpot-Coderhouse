@@ -249,9 +249,10 @@ const mostrarFooter = () => {
 
       footer.appendChild(fragment); 
 
+    //   Vaciar carrito
       const boton = d.getElementById("vaciar-carrito");
       boton.addEventListener("click",()=>{
-          carrito = {};
+         carrito = {};
         //console.log(carrito);
           llenarCarrito();
           nCantidad = 0;
@@ -259,6 +260,18 @@ const mostrarFooter = () => {
           quantity.innerHTML = `${nCantidad}`;
       })
       quantity.innerHTML = `${nCantidad}`
+
+      // Botón compra
+
+    const comprar = d.getElementById("comprar");
+
+    comprar.addEventListener("click", () => {
+        carrito= {};
+        llenarCarrito();
+        nCantidad= 0;
+        quantity.innerHTML = `${nCantidad}`;
+        alert("Gracias por tu compra!")
+    })
 }
 
 // Botones agregar y eliminar
