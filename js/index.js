@@ -157,11 +157,8 @@ const actualizarProductos = (data) => {
            }
         })
      detectarBotones(data);
-    })
-
-   
+    })   
 }
-
 
 
 let carrito = {};

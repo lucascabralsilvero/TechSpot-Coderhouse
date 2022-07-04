@@ -246,5 +246,8 @@ body.dark .footer h5 i:hover {
   main .section-2 .filters {
     top: 6.5rem;
   }
+  .cart-modal-overlay .cart-modal {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
