@@ -176,7 +176,7 @@ const detectarBotones = (data) => {
                 timer: 1000,
                 showConfirmButton:false,
                 toast:true,
-                position: "bottom-end",
+                position: "bottom",
             })
             const producto = data.find(item => item.id === parseInt(btn.dataset.id));
             producto.cantidad = 1;
@@ -272,6 +272,9 @@ const mostrarFooter = () => {
             showConfirmButton: false,
             timer:2000,
           })
+          setTimeout(() => {
+            cartModalOverlay.style.transform = 'translateX(-200%)';
+        }, 2000);
       })
       quantity.innerHTML = `${nCantidad}`
 
@@ -290,6 +293,10 @@ const mostrarFooter = () => {
         showConfirmButton: false,
         timer:2000,
        })
+       setTimeout(() => {
+           cartModalOverlay.style.transform = 'translateX(-200%)';
+       }, 2000);
+
     })
 }
 
@@ -336,7 +343,7 @@ function searchFilters(input,selector){
 
 //Sacamos comportamiento por defecto del form para evitar que recargue la página cuando damos enter
 
-const formContent = d.getElementById("form-content");
+const formContent = d.querySelectorAll("#form-content");
 
 formContent.addEventListener("submit", (e) => {
     e.preventDefault();
