@@ -198,6 +198,14 @@ body.dark .section-2 .filters {
   margin-bottom: 20rem;
 }
 
+.card-container .category {
+  background-color: #005d37;
+  width: 10rem;
+  border-radius: .4rem;
+  color: white;
+  padding: .2rem;
+}
+
 .footer {
   background-color: #ffc107;
   height: 4rem;

@@ -170,6 +170,14 @@ const detectarBotones = (data) => {
     
     botones.forEach(btn => {
         btn.addEventListener("click", () => {
+            Swal.fire({
+                title: "Producto agregado",
+                icon:"success",
+                timer: 1000,
+                showConfirmButton:false,
+                toast:true,
+                position: "bottom-end",
+            })
             const producto = data.find(item => item.id === parseInt(btn.dataset.id));
             producto.cantidad = 1;
             if(carrito.hasOwnProperty(producto.id)){
@@ -258,6 +266,12 @@ const mostrarFooter = () => {
           nCantidad = 0;
         //console.log(nCantidad)
           quantity.innerHTML = `${nCantidad}`;
+          Swal.fire({
+            title:"¡Carrito vaciado correctamente!",
+            icon: "warning",
+            showConfirmButton: false,
+            timer:2000,
+          })
       })
       quantity.innerHTML = `${nCantidad}`
 
@@ -270,7 +284,12 @@ const mostrarFooter = () => {
         llenarCarrito();
         nCantidad= 0;
         quantity.innerHTML = `${nCantidad}`;
-        alert("Gracias por tu compra!")
+       Swal.fire({
+        icon: "success",
+        title: "¡Gracias, su compra fue realizada con éxito!",
+        showConfirmButton: false,
+        timer:2000,
+       })
     })
 }
 
