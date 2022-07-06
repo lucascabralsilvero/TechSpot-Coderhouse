@@ -106,7 +106,7 @@ const actualizarProductos = (data) => {
     maxPrice = Math.max(...maxPrice);
     let minPrice  = data.map((item) => item.price);
     minPrice = Math.min(...minPrice);
-    console.log(minPrice)
+    // console.log(minPrice)
     priceInput.value = maxPrice; 
     priceInput.max = maxPrice; 
     priceInput.min = 0; 
@@ -182,7 +182,7 @@ const detectarBotones = (data) => {
                 producto.cantidad = carrito[producto.id].cantidad + 1;
             }
             carrito[producto.id] = {...producto};
-            console.log(producto)
+            // console.log(producto)
             llenarCarrito(); 
         })
     })
@@ -244,7 +244,7 @@ const mostrarFooter = () => {
     // Sumar cantidad y totales
 
     let nCantidad = Object.values(carrito).reduce((acc,{cantidad}) => acc + cantidad, 0)
-    console.log(nCantidad);
+    // console.log(nCantidad);
     const nPrecio = Object.values(carrito).reduce((acc,{cantidad,price}) => acc + cantidad * price,0)
     // console.log(nPrecio);
     template.querySelectorAll("td")[0].textContent = nCantidad;
@@ -383,7 +383,7 @@ formContent.addEventListener("submit", (e) => {
         procesadores.setAttribute("disabled","");
         motherboards.setAttribute("disabled","");
         [...d.querySelectorAll(".card")].filter(grafica => !grafica.textContent.includes("Gráfica")).forEach((el) => el.classList.add("d-none"));
-        console.log(contenedorProductos);
+        // console.log(contenedorProductos);
     } else {
         [...d.querySelectorAll(".card")].filter(grafica => !grafica.textContent.includes("Gráfica")).forEach((el) => el.classList.remove("d-none"));
         procesadores.removeAttribute("disabled","");
