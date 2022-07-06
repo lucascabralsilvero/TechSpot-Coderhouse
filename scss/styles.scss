@@ -160,6 +160,10 @@ main{
         top: 3.5rem;
         z-index: 100; 
 
+        .range{
+            margin-top: .8rem;
+        } 
+
         .check{
             cursor: pointer;
         }

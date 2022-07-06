@@ -357,9 +357,9 @@ formContent.addEventListener("submit", (e) => {
     if(procesadores.checked){
         motherboards.setAttribute("disabled","");
         graficas.setAttribute("disabled","");
-        [...d.querySelectorAll(".card")].filter(procesador => !procesador.textContent.includes("procesador")).forEach((el) => el.classList.add("d-none"));
+        [...d.querySelectorAll(".card")].filter(procesador => !procesador.textContent.includes("Procesador")).forEach((el) => el.classList.add("d-none"));
     } else {
-        [...d.querySelectorAll(".card")].filter(procesador => !procesador.textContent.includes("procesador")).forEach((el) => el.classList.remove("d-none"));
+        [...d.querySelectorAll(".card")].filter(procesador => !procesador.textContent.includes("Procesador")).forEach((el) => el.classList.remove("d-none"));
         motherboards.removeAttribute("disabled","");
         graficas.removeAttribute("disabled","");
     }
@@ -369,9 +369,9 @@ formContent.addEventListener("submit", (e) => {
     if(motherboards.checked){
         procesadores.setAttribute("disabled","");
         graficas.setAttribute("disabled","");
-        [...d.querySelectorAll(".card")].filter(motherboard => !motherboard.textContent.includes("motherboard")).forEach((el) => el.classList.add("d-none"));
+        [...d.querySelectorAll(".card")].filter(motherboard => !motherboard.textContent.includes("Motherboard")).forEach((el) => el.classList.add("d-none"));
     } else {
-        [...d.querySelectorAll(".card")].filter(motherboard => !motherboard.textContent.includes("motherboard")).forEach((el) => el.classList.remove("d-none"));
+        [...d.querySelectorAll(".card")].filter(motherboard => !motherboard.textContent.includes("Motherboard")).forEach((el) => el.classList.remove("d-none"));
         procesadores.removeAttribute("disabled","");
         graficas.removeAttribute("disabled","");
     }
@@ -382,10 +382,10 @@ formContent.addEventListener("submit", (e) => {
     if(graficas.checked){
         procesadores.setAttribute("disabled","");
         motherboards.setAttribute("disabled","");
-        [...d.querySelectorAll(".card")].filter(grafica => !grafica.textContent.includes("grafica")).forEach((el) => el.classList.add("d-none"));
+        [...d.querySelectorAll(".card")].filter(grafica => !grafica.textContent.includes("Gráfica")).forEach((el) => el.classList.add("d-none"));
         console.log(contenedorProductos);
     } else {
-        [...d.querySelectorAll(".card")].filter(grafica => !grafica.textContent.includes("grafica")).forEach((el) => el.classList.remove("d-none"));
+        [...d.querySelectorAll(".card")].filter(grafica => !grafica.textContent.includes("Gráfica")).forEach((el) => el.classList.remove("d-none"));
         procesadores.removeAttribute("disabled","");
         motherboards.removeAttribute("disabled","");
     }

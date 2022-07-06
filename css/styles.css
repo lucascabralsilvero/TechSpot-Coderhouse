@@ -166,6 +166,10 @@ body.dark .search-bottom {
   z-index: 100;
 }
 
+.section-2 .filters .range {
+  margin-top: .8rem;
+}
+
 .section-2 .filters .check {
   cursor: pointer;
 }
