@@ -5,7 +5,7 @@
         "price": 28190,
         "imageUrl": "../images/productos/procesadores/intel-2.png",
         "description": "Socket 1200 11th Gen Rocket Lake",
-        "categoria": "procesador"
+        "categoria": "Procesador"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "price": 22210,
         "imageUrl": "../images/productos/procesadores/intel-1.png",
         "description": "Socket 1200 11th Gen Rocket Lake",
-        "categoria": "procesador"
+        "categoria": "Procesador"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "price": 33650,
         "imageUrl": "../images/productos/procesadores/intel-2.png",
         "description": "Socket 1200 11th Gen Rocket Lake",
-        "categoria": "procesador"
+        "categoria": "Procesador"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "price": 37068,
         "imageUrl": "../images/productos/procesadores/intel-6.png",
         "description": "Socket 1700 12th Gen",
-        "categoria": "procesador"
+        "categoria": "Procesador"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "price": 55009,
         "imageUrl": "../images/productos/procesadores/intel-3.png",
         "description": "Socket 1200 11th Gen Rocket Lake",
-        "categoria": "procesador"
+        "categoria": "Procesador"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "price": 51560,
         "imageUrl": "../images/productos/procesadores/intel-7.png",
         "description": "4.9GHz Turbo 12th Gen Socket 1700 ",
-        "categoria": "procesador"
+        "categoria": "Procesador"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "price": 100420,
         "imageUrl": "../images/productos/procesadores/intel-5.png",
         "description": "5.2GHz Turbo 12th Gen Socket 1700",
-        "categoria": "procesador"
+        "categoria": "Procesador"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "price": 93340,
         "imageUrl": "../images/productos/procesadores/intel-4.png",
         "description": "5.2GHz Turbo 12th Gen Socket 1700",
-        "categoria": "procesador"
+        "categoria": "Procesador"
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "price": 21540,
         "imageUrl": "../images/productos/procesadores/ryzen-1.png",
         "description": "Wraith Stealth Cooler AM4 ",
-        "categoria": "procesador"
+        "categoria": "Procesador"
     }
     ,
     {
@@ -78,7 +78,7 @@
         "price": 22700,
         "imageUrl": "../images/productos/procesadores/ryzen-1.png",
         "description": "4.2GHz Turbo + Wraith Stealth Cooler ",
-        "categoria": "procesador"
+        "categoria": "Procesador"
     },
     {
         "id": 11,
@@ -86,7 +86,7 @@
         "price": 32170,
         "imageUrl": "../images/productos/procesadores/ryzen-1.png",
         "description": "4.4GHz Turbo + Wraith Stealth Cooler",
-        "categoria": "procesador"
+        "categoria": "Procesador"
     },
     {
         "id": 12,
@@ -94,7 +94,7 @@
         "price": 36000,
         "imageUrl": "../images/productos/procesadores/ryzen-1.png",
         "description": "4.6GHz Turbo AM4 + Wraith Stealth Cooler",
-        "categoria": "procesador"
+        "categoria": "Procesador"
     },
     {
         "id": 13,
@@ -102,7 +102,7 @@
         "price": 48080,
         "imageUrl": "../images/productos/procesadores/ryzen-2.png",
         "description": "4.6GHz Turbo AM4 - No incluye Cooler",
-        "categoria": "procesador"
+        "categoria": "Procesador"
     },
     {
         "id": 14,
@@ -110,7 +110,7 @@
         "price": 53990,
         "imageUrl": "../images/productos/procesadores/ryzen-2.png",
         "description": "4.7GHz Turbo AM4 - No incluye Cooler",
-        "categoria": "procesador"
+        "categoria": "Procesador"
     },
     {
         "id": 15,
@@ -118,7 +118,7 @@
         "price": 68238,
         "imageUrl": "../images/productos/procesadores/ryzen-3.png",
         "description": "4.8GHz Turbo AM4 - No incluye Cooler",
-        "categoria": "procesador"
+        "categoria": "Procesador"
     },
     {
         "id": 16,
@@ -126,7 +126,7 @@
         "price": 90905,
         "imageUrl": "../images/productos/procesadores/ryzen-3.png",
         "description": "4.9GHz Turbo AM4 - No incluye Cooler",
-        "categoria": "procesador"
+        "categoria": "Procesador"
     },
     {
         "id": 17,
@@ -134,7 +134,7 @@
         "price": 23650,
         "imageUrl": "../images/productos/motherboards/amd/1.png",
         "description": "Intel 11th Gen Socket 1200",
-        "categoria": "motherboard"
+        "categoria": "Motherboard"
     },
     {
         "id": 18,
@@ -142,7 +142,7 @@
         "price": 23000,
         "imageUrl": "../images/productos/motherboards/amd/2.png",
         "description": "Intel 11th Gen Socket 1200",
-        "categoria": "motherboard"
+        "categoria": "Motherboard"
     },
     {
         "id": 19,
@@ -150,7 +150,7 @@
         "price": 16030,
         "imageUrl": "../images/productos/motherboards/amd/3.png",
         "description": "S1200 11th Gen PCIe 4.0",
-        "categoria": "motherboard"
+        "categoria": "Motherboard"
     },
     {
         "id": 20,
@@ -158,7 +158,7 @@
         "price": 15380,
         "imageUrl": "../images/productos/motherboards/amd/4.png",
         "description": "mATX 11va gen S1200",
-        "categoria": "motherboard"
+        "categoria": "Motherboard"
     },
     {
         "id": 21,
@@ -166,7 +166,7 @@
         "price": 13800,
         "imageUrl": "../images/productos/motherboards/amd/5.png",
         "description": "Socket 1200 11th Gen",
-        "categoria": "motherboard"
+        "categoria": "Motherboard"
     },
     {
         "id": 22,
@@ -174,7 +174,7 @@
         "price": 98430,
         "imageUrl": "../images/productos/motherboards/amd/6.png",
         "description": "Intel 12th Gen",
-        "categoria": "motherboard"
+        "categoria": "Motherboard"
     },
     {
         "id": 23,
@@ -182,7 +182,7 @@
         "price": 56450,
         "imageUrl": "../images/productos/motherboards/amd/7.png",
         "description": "Wifi Intel 12th Gen S1700",
-        "categoria": "motherboard"
+        "categoria": "Motherboard"
     },
     {
         "id": 24,
@@ -190,7 +190,7 @@
         "price": 55990,
         "imageUrl": "../images/productos/motherboards/amd/8.png",
         "description": "GAMING Wifi Socket 1200 10th/11th Gen",
-        "categoria": "motherboard"
+        "categoria": "Motherboard"
     },
     {
         "id": 25,
@@ -198,7 +198,7 @@
         "price": 21500,
         "imageUrl": "../images/productos/motherboards/intel/1.png",
         "description": "AM4 RGB Dual M.2 Dual USB 3.1",
-        "categoria": "motherboard"
+        "categoria": "Motherboard"
     },
     {
         "id": 26,
@@ -206,7 +206,7 @@
         "price": 27170,
         "imageUrl": "../images/productos/motherboards/intel/2.png",
         "description": "AM4",
-        "categoria": "motherboard"
+        "categoria": "Motherboard"
     },
     {
         "id": 27,
@@ -214,7 +214,7 @@
         "price": 29410,
         "imageUrl": "../images/productos/motherboards/intel/3.png",
         "description": "AM4 PCIe Gen4 Dual M.2",
-        "categoria": "motherboard"
+        "categoria": "Motherboard"
     },
     {
         "id": 28,
@@ -222,7 +222,7 @@
         "price": 31380,
         "imageUrl": "../images/productos/motherboards/intel/4.png",
         "description": "AM4 PCIe Gen4",
-        "categoria": "motherboard"
+        "categoria": "Motherboard"
     },
     {
         "id": 29,
@@ -230,7 +230,7 @@
         "price": 37730,
         "imageUrl": "../images/productos/motherboards/intel/5.png",
         "description": "AM4 PCIe Gen4 RGB Polychrome Sync",
-        "categoria": "motherboard"
+        "categoria": "Motherboard"
     },
     {
         "id": 30,
@@ -238,7 +238,7 @@
         "price": 45670,
         "imageUrl": "../images/productos/motherboards/intel/6.png",
         "description": "AM4 PCIe Gen4 Dual Hyper M.2 RGB",
-        "categoria": "motherboard"
+        "categoria": "Motherboard"
     },
     {
         "id": 31,
@@ -246,7 +246,7 @@
         "price": 47600,
         "imageUrl": "../images/productos/motherboards/intel/7.png",
         "description": "Taichi Razer Edition AM4",
-        "categoria": "motherboard"
+        "categoria": "Motherboard"
     },
     {
         "id": 32,
@@ -254,7 +254,7 @@
         "price": 49190,
         "imageUrl": "../images/productos/motherboards/intel/8.png",
         "description": "Gaming Wifi AM4",
-        "categoria": "motherboard"
+        "categoria": "Motherboard"
     },
     {
         "id": 33,
@@ -262,7 +262,7 @@
         "price": 47610,
         "imageUrl": "../images/productos/placas-graficas/amd/1.png",
         "description": "Black 4GB GDDR6 Speedster QICK210",
-        "categoria": "grafica"
+        "categoria": "Gráfica"
     },
     {
         "id": 34,
@@ -270,7 +270,7 @@
         "price": 54000,
         "imageUrl": "../images/productos/placas-graficas/amd/2.png",
         "description": "4GB GDDR6 CHALLENGER D OC",
-        "categoria": "grafica"
+        "categoria": "Gráfica"
     },
     {
         "id": 35,
@@ -278,7 +278,7 @@
         "price": 60000,
         "imageUrl": "../images/productos/placas-graficas/amd/3.png",
         "description": "8GB DDR5 RS XXX Edition",
-        "categoria": "grafica"
+        "categoria": "Gráfica"
     },
     {
         "id": 36,
@@ -286,7 +286,7 @@
         "price": 82760,
         "imageUrl": "../images/productos/placas-graficas/amd/4.png",
         "description": "8GB GDDR6 Speedster SWFT210",
-        "categoria": "grafica"
+        "categoria": "Gráfica"
     },
     {
         "id": 37,
@@ -294,7 +294,7 @@
         "price": 90000,
         "imageUrl": "../images/productos/placas-graficas/amd/5.png",
         "description": "8G B GDDR6 Phantom Gaming D OC",
-        "categoria": "grafica"
+        "categoria": "Gráfica"
     },
     {
         "id": 38,
@@ -302,7 +302,7 @@
         "price": 90000,
         "imageUrl": "../images/productos/placas-graficas/amd/6.png",
         "description": "8GB OC Phantom Gaming X OC ",
-        "categoria": "grafica"
+        "categoria": "Gráfica"
     },
     {
         "id": 39,
@@ -310,7 +310,7 @@
         "price": 92900,
         "imageUrl": "../images/productos/placas-graficas/amd/7.png",
         "description": "12GB GDDR6 MECH 2X",
-        "categoria": "grafica"
+        "categoria": "Gráfica"
     },
     {
         "id": 40,
@@ -318,7 +318,7 @@
         "price": 93900,
         "imageUrl": "../images/productos/placas-graficas/amd/8.png",
         "description": "BLACK 12GB GDDR6 Speedster MERC 319",
-        "categoria": "grafica"
+        "categoria": "Gráfica"
     },
     {
         "id": 41,
@@ -326,7 +326,7 @@
         "price": 52900,
         "imageUrl": "../images/productos/placas-graficas/nvidia/1.png",
         "description": "6GB GDDR6 1-Click OC",
-        "categoria": "grafica"
+        "categoria": "Gráfica"
     },
     {
         "id": 42,
@@ -334,7 +334,7 @@
         "price": 80000,
         "imageUrl": "../images/productos/placas-graficas/nvidia/2.png",
         "description": "6GB GDDR6 Twin Fan",
-        "categoria": "grafica"
+        "categoria": "Gráfica"
     },
     {
         "id": 43,
@@ -342,7 +342,7 @@
         "price": 81500,
         "imageUrl": "../images/productos/placas-graficas/nvidia/3.png",
         "description": "6GB GDDR6 Phoenix OC",
-        "categoria": "grafica"
+        "categoria": "Gráfica"
     },
     {
         "id": 44,
@@ -350,7 +350,7 @@
         "price": 85000,
         "imageUrl": "../images/productos/placas-graficas/nvidia/4.png",
         "description": "GDDR6 Twin Edge LHR",
-        "categoria": "grafica"
+        "categoria": "Gráfica"
     },
     {
         "id": 45,
@@ -358,7 +358,7 @@
         "price": 148900,
         "imageUrl": "../images/productos/placas-graficas/nvidia/5.png",
         "description": " 8GB GDDR6X Trinity price",
-        "categoria": "grafica"
+        "categoria": "Gráfica"
     },
     {
         "id": 46,
@@ -366,7 +366,7 @@
         "price": 208900,
         "imageUrl": "../images/productos/placas-graficas/nvidia/6.png",
         "description": "12GB GDDR6X Trinity price",
-        "categoria": "grafica"
+        "categoria": "Gráfica"
     },
     {
         "id": 47,
@@ -374,7 +374,7 @@
         "price": 264000,
         "imageUrl": "../images/productos/placas-graficas/nvidia/7.png",
         "description": "12GB GDDR6X SG 1-Click OC price",
-        "categoria": "grafica"
+        "categoria": "Gráfica"
     },
     {
         "id": 48,
@@ -382,6 +382,6 @@
         "price": 489500,
         "imageUrl": "../images/productos/placas-graficas/nvidia/8.png",
         "description": "24GB GDDR6X TUF GAMING OC price",
-        "categoria": "grafica"
+        "categoria": "Gráfica"
     }
 ]
