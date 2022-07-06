@@ -258,12 +258,21 @@ body.dark .footer h5 i:hover {
   main .section-2 .filters {
     top: 6.5rem;
   }
+  main .section-2 .filters .range {
+    margin-bottom: .8rem;
+  }
   .cart-modal-overlay .cart-modal {
     width: 100%;
   }
 }
 
 @media only screen and (max-width: 992px) {
+  .section-2 .filters {
+    top: 6.5rem;
+  }
+  .section-2 .filters .range {
+    margin-bottom: .8rem;
+  }
   .nav-item .nav-link .cart-quantity {
     left: 1.7rem;
   }

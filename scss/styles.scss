@@ -254,6 +254,9 @@ main{
         .section-2{
             .filters{            
                 top: 6.5rem;   
+                .range{
+                    margin-bottom: .8rem;
+                }
             }
         }
     }
@@ -267,6 +270,14 @@ main{
 }
 
 @media only screen and (max-width: $desktop){
+    .section-2{
+        .filters{            
+            top: 6.5rem;   
+            .range{
+                margin-bottom: .8rem;
+            }
+        }
+    }
         .nav-item{
             .nav-link{
                 .cart-quantity{

@@ -341,11 +341,11 @@ function searchFilters(input,selector){
 
 //Sacamos comportamiento por defecto del form para evitar que recargue la página cuando damos enter
 
- const formContent = d.querySelector(".form-content");
+const formContent = d.querySelector(".form-content");
 
 formContent.addEventListener("submit", (e) => {
     e.preventDefault();
-} ) 
+} )  
 
 // Checkbox filter
 
