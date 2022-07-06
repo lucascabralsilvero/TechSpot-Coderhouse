@@ -13,8 +13,6 @@ document.addEventListener("DOMContentLoaded", () =>{
 }); 
 
 
-
-
 /********* Open Cart Modal *********/ 
 
 // Constantes:
@@ -417,3 +415,22 @@ if (localStorage.getItem("dark-mode") === "true") {
     d.body.classList.remove("dark");
     btnSwitch.classList.remove("active");
 }
+
+
+
+/* Login */
+
+login = d.getElementById("login"); 
+
+login.addEventListener("click", () => {
+    Swal.fire({
+        title: "¿Quién nos visita hoy?",
+        input: 'text',      
+        inputPlaceholder: "Introduce tu nombre"
+    }).then((result) => {
+        if (result.value) {
+           Swal.fire(`¡Bienvenido ${result.value}!
+            Gracias por elegirnos`);
+        }
+    });
+})
