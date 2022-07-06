@@ -199,11 +199,11 @@ body.dark .section-2 .filters {
 }
 
 .card-container .category {
-  background-color: #005d37;
   width: 10rem;
   border-radius: .4rem;
-  color: white;
+  color: #fd7e14;
   padding: .2rem;
+  font-weight: 700;
 }
 
 .footer {

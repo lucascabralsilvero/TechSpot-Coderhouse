@@ -190,11 +190,11 @@ main{
     }
 
     .category{
-        background-color: rgb(0, 93, 55);
         width: 10rem;
         border-radius: .4rem;
-        color: white;
+        color:$orange;
         padding: .2rem;
+        font-weight: 700;
     }
 }
 
